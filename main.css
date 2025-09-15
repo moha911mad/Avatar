@@ -1,0 +1,188 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(to right, #01022d, #000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   font-family: "Ubuntu Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+.container {
+    background-image:
+        linear-gradient(to right, #01022ddc 30%, #00000088),
+        url(bk.webp);
+    background-position: center;
+    background-size: cover;
+    width: 90%;
+    height: 100vh;
+ 
+}
+.container:hover{
+    background-image:
+        linear-gradient(to right, #01022ddc 30%, #00000000),
+        url(bk.webp);
+}
+ .container header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+header  {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    list-style: none;
+     font-size: 20px;
+}
+.logo{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+header a{
+    border-bottom: 2px solid transparent;
+
+
+}
+header ul a:hover{
+       border-bottom: 3px solid #eee;
+}
+.containt{
+    color: #eee;
+    width: 50%;
+    margin-top: 50px;
+    padding: 30px;
+
+}
+ .containt h2{
+    font-size: 100px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+
+}
+.containt p{
+    width: 400px;
+    letter-spacing: 3px;
+        font-size: 20px;
+}
+.containt button{
+    margin-top: 30px;
+    padding: 5px;
+    font-size: 30px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.containt button:hover{
+    background-color: transparent;
+    border-color: #eee;
+    color: #eee;
+
+}
+/* للشاشات تحت 1024px (تابلت وأجهزة لابتوب صغيرة) */
+@media (max-width: 1024px) {
+  header ul {
+    width: auto;
+    gap: 20px;
+    font-size: 18px;
+  }
+
+  .containt h2 {
+    font-size: 70px;
+  }
+
+  .containt p {
+    max-width: 350px;
+    font-size: 18px;
+  }
+}
+
+/* للشاشات تحت 768px (موبايل أفقي) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 16px;
+  }
+
+  .logo {
+    font-size: 30px;
+  }
+
+  .containt {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .containt h2 {
+    font-size: 50px;
+  }
+
+  .containt p {
+    max-width: 100%;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  .containt button {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+}
+
+/* للشاشات تحت 480px (موبايل صغير جدًا) */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 24px;
+  }
+
+  header ul {
+    font-size: 14px;
+    gap: 10px;
+  }
+
+  .containt h2 {
+    font-size: 35px;
+  }
+
+  .containt p {
+    font-size: 14px;
+  }
+
+  .containt button {
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+}
+
